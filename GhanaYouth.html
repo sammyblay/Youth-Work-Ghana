@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouthWork Ghana</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h1, h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(45deg, #f00, #ff0, #008000); /* Ghana's flag colors */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1rem;
+        }
+
+        /* Centered small image styling */
+        .centered-small-image {
+            width: 75px; /* Extremely small size */
+            height: auto;
+            display: block;
+            margin: 0 auto 10px; /* Center the image and add spacing below it */
+        }
+
+        /* Black Bar below Header */
+        header::after {
+            content: "";
+            display: block;
+            height: 5px;
+            background-color: #333; /* Black color */
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -5px;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #008000; /* Green from Ghana's flag */
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin: 0 20px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #ffcc00; /* Yellow highlight on hover */
+        }
+
+        /* Container */
+        .container {
+            width: 85%;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        /* Section Styles */
+        .section {
+            margin-bottom: 40px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        /* Freelancer Cards */
+        .card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            color: #4a4a4a; /* Professional dark gray */
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .card button {
+            background-color: #ffcc00; /* Yellow button */
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .card button:hover {
+            background-color: #e6b800;
+        }
+
+        /* Project Form */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, textarea {
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .local-payment h3 {
+            color: #008000;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+
+        .local-payment label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .local-payment input {
+            width: 100%;
+        }
+
+        button[type="submit"] {
+            background-color: #008000; /* Green button */
+            color: white;
+            font-size: 1.1rem;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #004d00; /* Darker green */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 1rem;
+            margin-top: 40px;
+        }
+
+        /* Mobile Responsiveness */
+        @media screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .container {
+                width: 90%;
+            }
+
+            .card {
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            footer {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://elements-resized.envatousercontent.com/elements-video-cover-images/files/98eaae1f-4e20-408a-b2e2-5bc114bd572b/inline_image_preview.jpg?w=500&cf_fit=cover&q=85&format=auto&s=95f2721afe10abadb944a6e73e2287166df3cc0ab68a0d921a6f87bac177cdc5" 
+             alt="Youth Empowerment Banner" class="centered-small-image">
+        <h1>YouthWork Ghana</h1>
+        <p>Empowering the youth of Ghana through freelancing opportunities</p>
+    </header>
+    <nav>
+        <a href="#freelancers">Find Freelancers</a>
+        <a href="#projects">Post a Project</a>
+        <a href="#about">About</a>
+    </nav>
+    <div class="container">
+        <section id="freelancers" class="section">
+            <h2>Find Freelancers</h2>
+            <div class="card">
+                <h3>Ama Boakye</h3>
+                <p>Graphic Designer specializing in African-inspired designs. 4+ years of experience.</p>
+                <button>Hire Now</button>
+            </div>
+            <div class="card">
+                <h3>Kwame Mensah</h3>
+                <p>Mobile App Developer with expertise in fintech solutions. 5+ years of experience.</p>
+                <button>Hire Now</button>
+            </div>
+        </section>
+        <section id="projects" class="section">
+            <h2>Post a Project</h2>
+            <form>
+                <label for="title">Project Title:</label>
+                <input type="text" id="title" name="title" required>
+                
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+                
+                <label for="budget">Budget (GHS):</label>
+                <input type="number" id="budget" name="budget" required>
+                
+                <div class="local-payment">
+                    <h3>Payment Method</h3>
+                    <label for="mobile-money">Mobile Money (MTN, Vodafone Cash, AirtelTigo Money):</label>
+                    <input type="text" id="mobile-money" name="mobile-money" placeholder="Enter your mobile number" required>
+                    
+                    <label for="bank-transfer">Bank Transfer:</label>
+                    <input type="text" id="bank-transfer" name="bank-transfer" placeholder="Enter your bank details">
+                </div>
+                
+                <button type="submit">Post Project</button>
+            </form>
+        </section>
+        <section id="about" class="section">
+            <h2>About</h2>
+            <p>YouthWork Ghana is an initiative by the Youth Authority to connect young talents in Ghana with clients locally and globally, fostering employment and skill development.</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 YouthWork Ghana. All rights reserved.</p>
+    </footer>
+</body>
+</html>
